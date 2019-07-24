@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">App Architecture</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="invalid_credentials">You input invalid credentials</string>
+    <string name="bad_request">You have wrong request</string>
+    <string name="error_something_wrong">You have find some thing wrong. Please try again.</string>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#808080</item>
+        <item name="colorPrimaryDark">#808080</item>
+        <item name="colorAccent">#808080</item> <!-- Type tvDeviceStatus-->
+        <item name="colorControlNormal">#808080</item> <!--- Line  -->
+        <item name="colorControlActivated">#808080</item> <!--- Label color -->
+        <item name="android:textColorPrimary">#808080</item> <!--  Error color/ line -->
+    </style>
+
+    <style name="txt_email">Email</style>
+</resources>
