@@ -1,4 +1,4 @@
-package com.app.architecture.ui;
+package com.app.architecture.base;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -7,6 +7,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.KeyEvent;
@@ -131,6 +132,20 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
         ButterKnife.bind(this);
+    }
+
+
+    public void replaceFragment(int containerId, boolean isStackAllow, BaseFragment baseFragment) {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(containerId, baseFragment);
+        if (isStackAllow) {
+            transaction.addToBackStack(baseFragment.getClass().getSimpleName());
+        }
+        transaction.commit();
+    }
+
+    public void replaceFragment(int containerId, BaseFragment baseFragment) {
+        replaceFragment(containerId, false, baseFragment);
     }
 
     public abstract int getLayoutId();

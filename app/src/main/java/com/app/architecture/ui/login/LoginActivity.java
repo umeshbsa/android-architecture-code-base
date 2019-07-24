@@ -5,7 +5,7 @@ import android.support.design.widget.TextInputEditText;
 import android.view.View;
 
 import com.app.architecture.R;
-import com.app.architecture.ui.BaseActivity;
+import com.app.architecture.base.BaseActivity;
 import com.app.architecture.ui.home.HomeActivity;
 
 import butterknife.BindView;
